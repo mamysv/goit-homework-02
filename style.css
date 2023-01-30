@@ -28,6 +28,10 @@ body {
   color: var(--accent-color);
 }
 
+.site-nav .link.curent {
+  color: var(--accent-color);
+}
+
 .section-title {
   color: var(--titel-text-color);
 }
