@@ -1,0 +1,53 @@
+:root {
+  --primary-text-color: #434455;
+  --titel-text-color: #2e2f42;
+  --accent-color: #4d5ae5;
+}
+body {
+  background-color: #ffffff;
+  color: var(--primary-text-color);
+}
+
+.logo {
+  color: var(--titel-text-color);
+}
+.logo:hover {
+  color: var(--accent-color);
+}
+
+.list {
+  list-style: none;
+}
+
+/* site nav */
+.site-nav .link {
+  color: var(--titel-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.section-title {
+  color: var(--titel-text-color);
+}
+
+.features-list .titel {
+  color: var(--titel-text-color);
+}
+
+/*foter*/
+
+.footer {
+  background-color: #2e2f42;
+}
+
+.footer-transcr {
+  color: #e7e9fc;
+}
+
+/*button*/
+.button {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
