@@ -11,9 +11,7 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1128px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 1158px;
   outline: 2px solid tomato;
 }
 .section {
@@ -243,11 +241,9 @@ p {
 
 /*foter*/
 .logo-footer {
+  width: 1128px;
   margin-left: auto;
   margin-right: auto;
-  width: 1128px;
-  padding-left: 15px;
-  padding-right: 15px;
   color: #f4f4fd;
   font-family: "Raleway";
   font-weight: 800;
@@ -273,8 +269,6 @@ p {
   margin-left: auto;
   margin-right: auto;
   width: 1128px;
-  padding-left: 15px;
-  padding-right: 15px;
   color: #e7e9fc;
   font-family: "Roboto";
   font-size: 16px;
