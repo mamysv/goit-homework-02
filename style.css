@@ -11,8 +11,21 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1158px;
+  width: 1128px;
+  padding-left: 15px;
+  padding-right: 15px;
   outline: 2px solid tomato;
+}
+.section {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1128px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 0px;
+  margin-bottom: 120px;
+
+  color: var(--titel-text-color);
 }
 .container .site-nav {
   display: flex;
@@ -64,7 +77,7 @@ p {
   align-items: center;
 }
 
-.list .adress .item:not(:last-child) {
+.list.adress .item:not(:last-child) {
   margin-right: 40px;
 }
 
@@ -136,10 +149,27 @@ p {
 }
 
 /*titel*/
-.section .features-list {
-  display: flex;
+.features-list {
+  width: 1128px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 120px;
 }
 
+.features-list.list {
+  display: flex;
+  width: 1128px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.features-list.list .item {
+  width: 264px;
+  margin-right: 24px;
+}
+
+.features-list.list .item:nth-child(4n) {
+  margin-right: 0;
+}
 .features-list .titel {
   margin-top: 0px;
   margin-bottom: 8px;
@@ -158,36 +188,37 @@ p {
 }
 
 /* List results*/
-.list-results {
+.list.list-results {
   display: flex;
-}
-.list-results .image {
+  width: 1128px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 120px;
+}
+.list.list-results .item {
+  margin-right: 24px;
+}
+.list.list-results .item:nth-child(n3) {
+  margin-right: 0;
 }
 
 /* List worker */
 .section-worker {
+  width: 1128px;
   margin-left: auto;
   margin-right: auto;
-  width: 1158px;
-  padding-top: 120px;
-  padding-bottom: 120px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 120px;
   color: var(--titel-text-color);
 }
-.list-worker {
-  margin-bottom: 120px;
-}
-
-.list-worker {
+.list-worker.list {
   display: flex;
 }
 
-.card-worker {
-  margin-left: auto;
-  margin-right: auto;
+.list-worker.list .item {
+  margin-right: 24px;
+}
+.list-worker.list .item:nth-child(n4) {
+  margin-right: 0;
 }
 
 .list-worker .text {
@@ -214,7 +245,9 @@ p {
 .logo-footer {
   margin-left: auto;
   margin-right: auto;
-  width: 1158px;
+  width: 1128px;
+  padding-left: 15px;
+  padding-right: 15px;
   color: #f4f4fd;
   font-family: "Raleway";
   font-weight: 800;
@@ -239,7 +272,9 @@ p {
 .footer-transcr {
   margin-left: auto;
   margin-right: auto;
-  width: 1158px;
+  width: 1128px;
+  padding-left: 15px;
+  padding-right: 15px;
   color: #e7e9fc;
   font-family: "Roboto";
   font-size: 16px;
@@ -265,7 +300,7 @@ p {
 }
 
 /* button-portfolio */
-.portfolio-nav {
+.list.portfolio-nav {
   display: flex;
   justify-content: center;
   margin-bottom: 72px;
@@ -288,21 +323,16 @@ p {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+/*portfolio*/
 
-.portfolio-block {
+.list.portfolio-block {
+  width: 1128px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-wrap: wrap;
 }
 
-.section {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1158px;
-  margin-top: 0px;
-  margin-bottom: 120px;
-
-  color: var(--titel-text-color);
-}
 .list-portfolio {
   color: var(--titel-text-color);
   font-family: "Roboto";
@@ -323,4 +353,15 @@ p {
 
 .portfolio-none {
   text-decoration: none;
+  width: 360px;
+  margin-right: 24px;
+  margin-bottom: 48px;
+}
+
+.portfolio-none:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.portfolio-none:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
 }
