@@ -12,6 +12,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
   outline: 2px solid tomato;
 }
 .section {
@@ -78,9 +80,10 @@ p {
 .list.adress .item:not(:last-child) {
   margin-right: 40px;
 }
-
-.site-nav .link {
+.site-nav.list .item {
   margin-right: 40px;
+}
+.site-nav .link {
   display: block;
   color: var(--titel-text-color);
   font-weight: 500;
@@ -133,7 +136,8 @@ p {
 .hero-titel {
   text-align: center;
   background-color: var(--titel-text-color);
-  margin-bottom: 120px;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 .herro {
   margin-top: 0;
@@ -142,7 +146,6 @@ p {
   background-color: var(--titel-text-color);
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
   letter-spacing: 0.02em;
 }
 
@@ -151,24 +154,25 @@ p {
   width: 1128px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
-.features-list.list {
+.features-item.list {
   display: flex;
   width: 1128px;
   margin-left: auto;
   margin-right: auto;
 }
-.features-list.list .item {
+.features-item.list .item {
   width: 264px;
   margin-right: 24px;
 }
 
-.features-list.list .item:nth-child(4n) {
+.features-item.list .item:nth-child(4n) {
   margin-right: 0;
 }
-.features-list .titel {
+.features-item .titel {
   margin-top: 0px;
   margin-bottom: 8px;
   font-weight: 500;
@@ -177,7 +181,7 @@ p {
   letter-spacing: 0.02em;
 }
 
-.features-list .text {
+.features-item .text {
   margin-top: 0px;
   margin-bottom: 0px;
   font-size: 16px;
@@ -186,6 +190,12 @@ p {
 }
 
 /* List results*/
+.result {
+  width: 1128px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 120px;
+}
 .list.list-results {
   display: flex;
   width: 1128px;
@@ -205,8 +215,11 @@ p {
   width: 1128px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 120px;
   color: var(--titel-text-color);
+}
+.section-worker .container {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .list-worker.list {
   display: flex;
@@ -218,16 +231,17 @@ p {
 .list-worker.list .item:nth-child(n4) {
   margin-right: 0;
 }
-
+.description {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .list-worker .text {
-  margin-bottom: 32px;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
 }
 .list-worker .name {
-  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -235,15 +249,12 @@ p {
   letter-spacing: 0.02em;
 }
 
-.img-worker {
-  margin-bottom: 32px;
-}
-
 /*foter*/
 .logo-footer {
   width: 1128px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 16px;
   color: #f4f4fd;
   font-family: "Raleway";
   font-weight: 800;
@@ -266,9 +277,7 @@ p {
 }
 
 .footer-transcr {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1128px;
+  width: 264px;
   color: #e7e9fc;
   font-family: "Roboto";
   font-size: 16px;
@@ -297,8 +306,6 @@ p {
 .list.portfolio-nav {
   display: flex;
   justify-content: center;
-  margin-bottom: 72px;
-  margin-top: 96px;
 }
 .button-portfolio {
   margin-right: 24px;
@@ -318,13 +325,21 @@ p {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /*portfolio*/
-
+.portfolio {
+  margin-top: 96px;
+  margin-bottom: 72px;
+}
 .list.portfolio-block {
-  width: 1128px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 120px;
   display: flex;
   flex-wrap: wrap;
+}
+.descr-port {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
 }
 
 .list-portfolio {
@@ -344,12 +359,14 @@ p {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-
-.portfolio-none {
+.container .portfolio-none .item {
   text-decoration: none;
+}
+.portfolio-none {
   width: 360px;
   margin-right: 24px;
   margin-bottom: 48px;
+  outline: 1px solid #e7e9fc;
 }
 
 .portfolio-none:nth-child(3n) {
