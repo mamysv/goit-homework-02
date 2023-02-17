@@ -361,7 +361,7 @@ p {
 
 .customers .item-1 {
   display: inline-block;
-  content: "hbkhbkjnb";
+  content: "";
   margin-right: 24px;
   width: 168px;
   height: 88px;
@@ -377,7 +377,7 @@ p {
 }
 .customers .item-2 {
   display: inline-block;
-  content: "hbkhbkjnb";
+  content: "";
   margin-right: 24px;
   width: 168px;
   height: 88px;
@@ -393,7 +393,7 @@ p {
 }
 .customers .item-3 {
   display: inline-block;
-  content: "hbkhbkjnb";
+  content: "";
   margin-right: 24px;
   width: 168px;
   height: 88px;
@@ -409,7 +409,7 @@ p {
 }
 .customers .item-4 {
   display: inline-block;
-  content: "hbkhbkjnb";
+  content: "";
   margin-right: 24px;
   width: 168px;
   height: 88px;
@@ -425,7 +425,7 @@ p {
 }
 .customers .item-5 {
   display: inline-block;
-  content: "hbkhbkjnb";
+  content: "";
   margin-right: 24px;
   width: 168px;
   height: 88px;
@@ -441,7 +441,7 @@ p {
 }
 .customers .item-6 {
   display: inline-block;
-  content: "hbkhbkjnb";
+  content: "";
   margin-bottom: 0;
   width: 168px;
   height: 88px;
