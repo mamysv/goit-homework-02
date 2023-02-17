@@ -610,8 +610,12 @@ p {
   border: 1px solid #e7e9fc;
   border-radius: 4px;
 }
-/*portfolio*/
 
+.button-portfolio:hover {
+  background-color: #4d5ae5;
+  color: #f4f4fd;
+}
+/*portfolio*/
 .name-portfolio {
   display: none;
 }
