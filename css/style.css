@@ -199,26 +199,32 @@ p {
 }
 .features-item.list .item:nth-child(1):before {
   background-image: url(../images/antenna.svg);
+  margin-bottom: 8px;
 }
 
 .features-item.list .item:nth-child(2):before {
   background-image: url(../images/clock.svg);
+  margin-bottom: 8px;
 }
 
 .features-item.list .item:nth-child(3):before {
   background-image: url(../images/antenna.svg);
+  margin-bottom: 8px;
 }
 
 .features-item.list .item:nth-child(4):before {
   background-image: url(../images/astronaut.svg);
+  margin-bottom: 8px;
 }
 
 .features-item.list .item:nth-child(4n) {
   margin-right: 0;
 }
 .features-item .titel {
+  text-align: left;
   margin-top: 0px;
   margin-bottom: 8px;
+  margin-left: auto;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -226,6 +232,7 @@ p {
 }
 
 .features-item .text {
+  text-align: left;
   margin-top: 0px;
   margin-bottom: 0px;
   font-size: 16px;
@@ -234,9 +241,7 @@ p {
 }
 
 /* List results*/
-.result {
-  padding-bottom: 120px;
-}
+
 .list.list-results {
   display: flex;
   width: 1128px;
@@ -311,7 +316,7 @@ p {
   height: 16px;
 }
 .description .list .item:is(:hover, :focus) {
-  background-color: #064273;
+  background-color: #404bbf;
 }
 /*customers*/
 
@@ -356,11 +361,11 @@ p {
 }
 
 .customers-item .item:is(:hover, :focus) {
-  border-color: #064273;
+  border-color: #404bbf;
 }
 
 .customers-item .item:is(:hover, :focus) .item-icon {
-  fill: #064273;
+  fill: #404bbf;
 }
 
 /*foter*/
@@ -425,7 +430,7 @@ p {
 .footer-social .list .item {
   display: inline-block;
   content: "";
-  margin-right: 24px;
+  margin-right: 16px;
   width: 40px;
   height: 40px;
   background-repeat: no-repeat;
@@ -494,6 +499,13 @@ p {
 .name-portfolio {
   display: none;
 }
+
+.portfolio .item :hover {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border: 1px solid #4d5ae5;
+}
+
 .portfolio {
   padding-top: 96px;
   padding-bottom: 78px;
@@ -513,6 +525,7 @@ p {
 
 .list-portfolio {
   color: var(--titel-text-color);
+  text-align: left;
   font-family: "Roboto";
   font-weight: 500;
   font-size: 20px;
@@ -523,6 +536,7 @@ p {
 }
 .portfolio-text {
   color: var(--primary-text-color);
+  text-align: left;
   font-family: "Roboto";
   font-size: 16px;
   line-height: 1.5;
