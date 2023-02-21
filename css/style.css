@@ -104,6 +104,16 @@ p {
   color: var(--accent-color);
 }
 
+.site-nav .item.curent::after {
+  display: block;
+  content: "";
+  width: auto;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+  margin-bottom: px;
+}
+
 .auth-nav {
   color: var(--primary-text-color);
   font-family: "Roboto";
@@ -541,11 +551,39 @@ p {
 .container .portfolio-none .item {
   text-decoration: none;
 }
+
 .portfolio-none {
   width: 360px;
   margin-right: 24px;
   margin-bottom: 48px;
   outline: 1px solid #e7e9fc;
+}
+
+.portfolio-none:hover .portfolio-cover-text {
+  transform: translateY(0%);
+}
+
+.portfolio-cover-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-cover-text {
+  position: absolute;
+  top: 0px;
+  padding-top: 40px;
+  padding-left: 32px;
+  height: 100%;
+  text-align: left;
+  background-color: #4d5ae5;
+  font-family: Roboto;
+  font-style: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  transform: translateY(100%);
+  transition: transform 250ms linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-none:hover {
@@ -571,4 +609,47 @@ p {
 .portfolio-action {
   outline: px solid tomato;
   position: absolute;
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms linear, visibility 250ms linear;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 408px;
+  min-height: 576px;
+  background-color: #fcfcfc;
+  border-radius: 4px;
+  padding: 24px;
+  transition: transform 250ms linear;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.modal-close {
+  width: 24px;
+  height: 24px;
+  background-color: #e7e9fc;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
