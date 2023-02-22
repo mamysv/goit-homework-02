@@ -43,12 +43,15 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo .accent {
   color: #4d5ae5;
 }
 
-.logo:hover {
+.logo:is(:hover, :focus) {
   color: var(--accent-color);
 }
 
@@ -94,13 +97,15 @@ p {
   text-decoration: none;
   padding-top: 24px;
   padding-bottom: 24px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .link:is(:hover, :focus) {
   color: var(--accent-color);
 }
 
-.site-nav .link.curent {
+.site-nav .ilink.curent {
   color: var(--accent-color);
 }
 
@@ -121,6 +126,9 @@ p {
   font-size: 16px;
   line-height: 1.5;
   text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .adress {
@@ -142,8 +150,7 @@ p {
 .features-list .titel {
   color: var(--titel-text-color);
 }
-.auth-nav:hover,
-.auth-nav:focus {
+.auth-nav:is(:hover, :focus) {
   color: var(--accent-color);
 }
 
@@ -320,6 +327,9 @@ p {
   background-color: #5a4fcf;
   padding-top: 12px;
   padding-bottom: 12px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .description .list .item-icon {
@@ -358,11 +368,17 @@ p {
   background-position: center;
   border-radius: 4%;
   border: 1px solid #8e8f99;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers .item .item-icon {
   width: 104px;
   height: 56px;
   margin-top: 16px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-item {
   fill: #999;
@@ -454,6 +470,9 @@ p {
   );
   padding-top: 8px;
   padding-bottom: 8px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social .list .item:is(:hover, :focus) {
   background-color: #31d0aa;
@@ -500,9 +519,12 @@ p {
   letter-spacing: 0.04em;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-portfolio:hover {
+.button-portfolio:is(:hover, :focus) {
   background-color: #4d5ae5;
   color: #f4f4fd;
 }
@@ -557,9 +579,12 @@ p {
   margin-right: 24px;
   margin-bottom: 48px;
   outline: 1px solid #e7e9fc;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-none:hover .portfolio-cover-text {
+.portfolio-none:is(:hover, :focus) .portfolio-cover-text {
   transform: translateY(0%);
 }
 
@@ -582,11 +607,12 @@ p {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   transform: translateY(100%);
-  transition: transform 250ms linear;
+  transition-property: transform;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-none:hover {
+.portfolio-none:is(:hover, :focus) {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
